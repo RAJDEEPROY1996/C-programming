@@ -1,4 +1,3 @@
-#include <conio.h>
 #include <stdio.h>
 #include <string.h>
 #include<stdlib.h>
@@ -22,8 +21,7 @@ int main()
 	};
 	struct truck_details td;
 
-	clrscr();
-      
+	
 	fptr=fopen("Output.txt","w");
 	if(fptr == NULL)
 	{
@@ -274,6 +272,5 @@ int main()
 		}
 		fclose(fptr);
 	 free(demands),free(extern_cost),free(resultant),free(xaxis),free(yaxis);
-	 getch();
 	 return 0;
 }
